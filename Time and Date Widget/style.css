@@ -1,0 +1,78 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body{
+  background-color: #1a1a1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container{
+  width: 35.87em;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 8fr 4fr;
+  background-color: #1e90ff;
+  border-radius: 0.5em;
+  cursor: pointer;
+  animation: neon-glow 1.5s ease-in-out infinite alternate;
+}
+
+.clock-container{
+  background-color: #1a1a1a;
+  color: #fff;
+  text-align: center;
+  font-size: 3.75em;
+  margin-left: 0.2em;
+  border-radius: 0.1em;
+  padding: 0.2em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* letter-spacing: 10px; */
+}
+
+.clock-container span{
+  width: 120px;
+  display: inline-block;
+  text-align: center;
+}
+
+.hours{
+  color: #f00;
+}
+
+.minutes{
+  color: #0f0;
+}
+
+.seconds{
+  color: #00f;
+}
+
+@keyframes neon-glow {
+  0%{
+    box-shadow: 0 0 5px #fff, 0 0 20px #fff;
+  }
+  100%{
+    box-shadow: 0 0 20px #fff, 0 0 40px #fff;
+  }
+}
+
+.date-container{
+  padding: 10px;
+  background-color: #2784e0;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.date-container span{
+  font-size: 2.5em;
+}

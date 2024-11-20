@@ -27,7 +27,7 @@ function updateColor(){
 
   //console.log(redValue,greenValue,blueValue);
 
-  const rgbColor = `rgb(${redValue}, ${greenValue} ${blueValue})`;
+  const rgbColor = `rgb(${redValue}, ${greenValue}, ${blueValue})`;
 
   colorBox.style.backgroundColor = rgbColor;
 
