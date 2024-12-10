@@ -1,5 +1,5 @@
 function detectChar() {
-  const input = document.getElementById("inputType").value.trim(); // Trim to remove extra spaces
+  const input = document.getElementById("inputType").value.trim(); 
 
   if (input) {
     const unicodeValue = input.charCodeAt(0);

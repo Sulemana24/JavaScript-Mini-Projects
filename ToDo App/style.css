@@ -1,0 +1,138 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.main-container{
+  width: 100%;
+  min-height: 100vh;
+  background: #003366;
+  padding: 10px;
+}
+
+.task-app{
+  position: relative;
+  width: 100%;
+  max-width: 540px;
+  background: #fff;
+  margin: 100px auto 20px;
+  padding: 40px 30px 5px;
+  border-radius: 5px;
+}
+
+.task-app h2{
+  font-size: 30px;
+  color: #001a4d;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.task-row{
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #001a4d;
+  border-radius: 5px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+input{
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  font-size: 14px;
+  font-style: italic;
+  color: #fff;
+}
+
+input::placeholder{
+  color: #fff;
+  opacity: 0.6;
+}
+
+button{
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  background: hsl(210, 100%, 52%);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 20px 5px 5px 20px;
+}
+
+button:hover{
+  background: hsl(210, 100%, 48%);
+}
+
+button:active{
+  background: hsl(210, 100%, 42%);
+}
+
+ul li{
+  position: relative;
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+}
+
+ul li::before{
+  content: '';
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  border: 1px solid gray;
+  border-radius: 50%;
+  top: 12px;
+  left: 8px;
+}
+
+ul li.checked{
+  color: #555;
+  text-decoration: line-through;
+}
+
+ul li span{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #d50101;
+  top: 10px;
+  right: 0;
+  border-radius: 50%;
+}
+
+ul li span:hover{
+  background: #9e0202;
+}
+
+.remove{
+  border: none;
+  outline: none;
+  /* padding: 16px 50px; */
+  background: hsl(220, 100%, 15%);
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin: 2rem auto 0;
+  width: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.remove:hover{
+  background: hsl(220, 100%, 25%);
+}
+
+.remove:active{
+  background: hsl(220, 100%, 35%);
+}
