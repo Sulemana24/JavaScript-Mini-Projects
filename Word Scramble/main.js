@@ -6,7 +6,7 @@ const wordText = document.querySelector(".word"),
   inputField = document.querySelector("input"),
   timeText = document.querySelector(".time b"),
   scoreText = document.querySelector(".score"),
-  highScoreText = document.querySelector(".high-score"); // New: Display high score
+  highScoreText = document.querySelector(".high-score"); // Display high score
   const result = document.getElementById("result");
   const revealBtn = document.querySelector(".reveal-word");
 

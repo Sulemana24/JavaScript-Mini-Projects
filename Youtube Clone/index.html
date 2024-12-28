@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Homepage Clone</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="sidebar-hidden">
+  <div class="container">
+    <header>
+      <nav class="navbar">
+        <div class="nav-section nav-left">
+          <button class="nav-button menu-button">
+            <i class="ri-menu-line" aria-label="menu-line"></i>
+          </button>
+          <a href="#" class="nav-logo">
+            
+            <h2 class="logo-text">Simdi</h2>
+          </a>
+        </div>
+        <div class="nav-section nav-center">
+          <form action="#" class="search-form">
+            <input type="search" placeholder="Search" required class="search-input">
+            <button class="nav-button search-button">
+              <i class="ri-search-line"></i>
+            </button>
+          </form>
+          <button class="nav-button mic-button">
+            <i class="ri-mic-line"></i>
+          </button>
+        </div>
+        <div class="nav-section nav-right">
+          <button class="nav-button search-button">
+            <i class="ri-search-line"></i>
+          </button>
+          <button class="nav-button theme-button">
+            <i class="ri-moon-fill"></i>
+          </button>
+          <img src="IMG_2822.JPG" alt="user" class="user-image">
+        </div>
+      </nav>
+    </header>
+    <main class="main-layout">
+      <div class="screen-overlay"></div>
+      <aside class="sidebar">
+       <!--  <div class="nav-section nav-left">
+          <button class="nav-button menu-button">
+            <i class="ri-menu-line" aria-label="menu-line"></i>
+          </button>
+          <a href="#" class="nav-logo">
+            <h2 class="logo-text">Simdi</h2>
+          </a>
+        </div> -->
+        
+        <div class="link-container">
+          <div class="link-section">
+            <a href="#" class="link-item">
+              <i class="ri-home-4-line"></i>Home
+            </a>
+            <a href="#" class="link-item">
+              <i class="ri-video-on-line"></i>Shorts
+            </a>
+            <a href="#" class="link-item">
+              <i class="ri-tv-line"></i>Subscription
+            </a>
+          </div>
+          <div class="section separator"></div>
+          <h4 class="section-title">You</h4>
+          <div class="link-section">
+            <a href="#" class="link-item">
+              <i class="ri-user-line"></i></i>Bindawdi TV
+            </a>
+            <a href="#" class="link-item">
+              <i class="ri-history-line"></i>History
+            </a>
+            <a href="#" class="link-item">
+              <i class="ri-time-line"></i>Watch later
+            </a>
+          </div>
+          <div class="section separator"></div>
+          <h4 class="section-title">Explore</h4>
+          <div class="link-section">
+            <a href="#" class="link-item">
+              <i class="ri-fire-line"></i>Trending
+            </a>
+            <a href="#" class="link-item">
+              <i class="ri-music-2-line"></i></i>Music
+            </a>
+            <a href="#" class="link-item">
+              <i class="ri-gamepad-line"></i>Gaming</a>
+            <a href="#" class="link-item">
+              <i class="ri-trophy-line"></i>Sports</a>
+          </div>
+          <div class="section separator"></div>
+          <h4 class="section-title">More from YouTube</h4>
+          <div class="link-section">
+            <a href="#" class="link-item">
+              <i class="ri-shield-line"></i>YouTube Plus
+            </a>
+            <a href="#" class="link-item">
+              <i class="ri-headphone-line"></i></i>YouTube Music</a>
+            <a href="#" class="link-item">
+              <i class="ri-airplay-line"></i>YouTube kids</a>
+          </div>
+          <div class="section separator"></div>
+          <div class="link-section">
+            <a href="#" class="link-item">
+              <i class="ri-tools-line"></i>Settings
+            </a>
+            <a href="#" class="link-item">
+              <i class="ri-flag-line"></i>Report</a>
+            <a href="#" class="link-item">
+              <i class="ri-questionnaire-line"></i>Help</a>
+            <a href="#" class="link-item">
+              <i class="ri-feedback-line"></i>Feedback</a>
+          </div>
+          <div class="section separator"></div>
+        </div>
+      </aside>
+      <div class="content-wrapper">
+        <div class="category-list">
+          <button class="category-button active">All</button>
+          <button class="category-button">Website</button>
+          <button class="category-button">Music</button>
+          <button class="category-button">Gaming</button>
+          <button class="category-button">Node.js</button>
+          <button class="category-button">JavaScript</button>
+          <button class="category-button">React.js</button>
+          <button class="category-button">TypeScript</button>
+          <button class="category-button">Coding</button>
+          <button class="category-button">Next.js</button>
+          <button class="category-button">Data analysis</button>
+          <button class="category-button">Web design</button>
+          <button class="category-button">HTML</button>
+          <button class="category-button">CSS</button>
+          <button class="category-button">Tailwind</button>
+          <button class="category-button">Express.js</button>
+        </div>
+        <div class="video-list">
+          <a href="#" class="video-card">
+            <div class="thumbnail-container">
+              <img src="https://i.ytimg.com/vi/OORUHkgg4IM/maxresdefault.jpg" alt="thumbnail" class="thumbnail">
+              <p class="duration">10:03</p>
+            </div>
+            <div class="video-info">
+              <img src="https://i.ytimg.com/vi/OORUHkgg4IM/maxresdefault.jpg" alt="Channel Logo" class="icon">
+              <div class="video-details">
+                <h2 class="title">Top 10 Easy To Create JavaScript Games For Beginners</h2>
+                <p class="channel name">Bindawdi TV</p>
+                <p class="views">27k Views ~ 4 months ago</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="video-card">
+            <div class="thumbnail-container">
+              <img src="https://i.ytimg.com/vi/OORUHkgg4IM/maxresdefault.jpg" alt="thumbnail" class="thumbnail">
+              <p class="duration">10:03</p>
+            </div>
+            <div class="video-info">
+              <img src="https://i.ytimg.com/vi/OORUHkgg4IM/maxresdefault.jpg" alt="Channel Logo" class="icon">
+              <div class="video-details">
+                <h2 class="title">Top 10 Easy To Create JavaScript Games For Beginners</h2>
+                <p class="channel name">Bindawdi TV</p>
+                <p class="views">27k Views ~ 4 months ago</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="video-card">
+            <div class="thumbnail-container">
+              <img src="https://i.ytimg.com/vi/OORUHkgg4IM/maxresdefault.jpg" alt="thumbnail" class="thumbnail">
+              <p class="duration">10:03</p>
+            </div>
+            <div class="video-info">
+              <img src="https://i.ytimg.com/vi/OORUHkgg4IM/maxresdefault.jpg" alt="Channel Logo" class="icon">
+              <div class="video-details">
+                <h2 class="title">Top 10 Easy To Create JavaScript Games For Beginners</h2>
+                <p class="channel name">Bindawdi TV</p>
+                <p class="views">27k Views ~ 4 months ago</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="video-card">
+            <div class="thumbnail-container">
+              <img src="https://i.ytimg.com/vi/OORUHkgg4IM/maxresdefault.jpg" alt="thumbnail" class="thumbnail">
+              <p class="duration">10:03</p>
+            </div>
+            <div class="video-info">
+              <img src="https://i.ytimg.com/vi/OORUHkgg4IM/maxresdefault.jpg" alt="Channel Logo" class="icon">
+              <div class="video-details">
+                <h2 class="title">Top 10 Easy To Create JavaScript Games For Beginners</h2>
+                <p class="channel name">Bindawdi TV</p>
+                <p class="views">27k Views ~ 4 months ago</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="video-card">
+            <div class="thumbnail-container">
+              <img src="https://i.ytimg.com/vi/OORUHkgg4IM/maxresdefault.jpg" alt="thumbnail" class="thumbnail">
+              <p class="duration">10:03</p>
+            </div>
+            <div class="video-info">
+              <img src="https://i.ytimg.com/vi/OORUHkgg4IM/maxresdefault.jpg" alt="Channel Logo" class="icon">
+              <div class="video-details">
+                <h2 class="title">Top 10 Easy To Create JavaScript Games For Beginners</h2>
+                <p class="channel name">Bindawdi TV</p>
+                <p class="views">27k Views ~ 4 months ago</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="video-card">
+            <div class="thumbnail-container">
+              <img src="https://i.ytimg.com/vi/OORUHkgg4IM/maxresdefault.jpg" alt="thumbnail" class="thumbnail">
+              <p class="duration">10:03</p>
+            </div>
+            <div class="video-info">
+              <img src="https://i.ytimg.com/vi/OORUHkgg4IM/maxresdefault.jpg" alt="Channel Logo" class="icon">
+              <div class="video-details">
+                <h2 class="title">Top 10 Easy To Create JavaScript Games For Beginners</h2>
+                <p class="channel name">Bindawdi TV</p>
+                <p class="views">27k Views ~ 4 months ago</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="video-card">
+            <div class="thumbnail-container">
+              <img src="https://i.ytimg.com/vi/OORUHkgg4IM/maxresdefault.jpg" alt="thumbnail" class="thumbnail">
+              <p class="duration">10:03</p>
+            </div>
+            <div class="video-info">
+              <img src="https://i.ytimg.com/vi/OORUHkgg4IM/maxresdefault.jpg" alt="Channel Logo" class="icon">
+              <div class="video-details">
+                <h2 class="title">Top 10 Easy To Create JavaScript Games For Beginners</h2>
+                <p class="channel name">Bindawdi TV</p>
+                <p class="views">27k Views ~ 4 months ago</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="video-card">
+            <div class="thumbnail-container">
+              <img src="https://i.ytimg.com/vi/OORUHkgg4IM/maxresdefault.jpg" alt="thumbnail" class="thumbnail">
+              <p class="duration">10:03</p>
+            </div>
+            <div class="video-info">
+              <img src="https://i.ytimg.com/vi/OORUHkgg4IM/maxresdefault.jpg" alt="Channel Logo" class="icon">
+              <div class="video-details">
+                <h2 class="title">Top 10 Easy To Create JavaScript Games For Beginners</h2>
+                <p class="channel name">Bindawdi TV</p>
+                <p class="views">27k Views ~ 4 months ago</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="video-card">
+            <div class="thumbnail-container">
+              <img src="https://i.ytimg.com/vi/OORUHkgg4IM/maxresdefault.jpg" alt="thumbnail" class="thumbnail">
+              <p class="duration">10:03</p>
+            </div>
+            <div class="video-info">
+              <img src="https://i.ytimg.com/vi/OORUHkgg4IM/maxresdefault.jpg" alt="Channel Logo" class="icon">
+              <div class="video-details">
+                <h2 class="title">Top 10 Easy To Create JavaScript Games For Beginners</h2>
+                <p class="channel name">Bindawdi TV</p>
+                <p class="views">27k Views ~ 4 months ago</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="video-card">
+            <div class="thumbnail-container">
+              <img src="https://i.ytimg.com/vi/OORUHkgg4IM/maxresdefault.jpg" alt="thumbnail" class="thumbnail">
+              <p class="duration">10:03</p>
+            </div>
+            <div class="video-info">
+              <img src="https://i.ytimg.com/vi/OORUHkgg4IM/maxresdefault.jpg" alt="Channel Logo" class="icon">
+              <div class="video-details">
+                <h2 class="title">Top 10 Easy To Create JavaScript Games For Beginners</h2>
+                <p class="channel name">Bindawdi TV</p>
+                <p class="views">27k Views ~ 4 months ago</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="video-card">
+            <div class="thumbnail-container">
+              <img src="https://i.ytimg.com/vi/OORUHkgg4IM/maxresdefault.jpg" alt="thumbnail" class="thumbnail">
+              <p class="duration">10:03</p>
+            </div>
+            <div class="video-info">
+              <img src="https://i.ytimg.com/vi/OORUHkgg4IM/maxresdefault.jpg" alt="Channel Logo" class="icon">
+              <div class="video-details">
+                <h2 class="title">Top 10 Easy To Create JavaScript Games For Beginners</h2>
+                <p class="channel name">Bindawdi TV</p>
+                <p class="views">27k Views ~ 4 months ago</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="video-card">
+            <div class="thumbnail-container">
+              <img src="https://i.ytimg.com/vi/OORUHkgg4IM/maxresdefault.jpg" alt="thumbnail" class="thumbnail">
+              <p class="duration">10:03</p>
+            </div>
+            <div class="video-info">
+              <img src="https://i.ytimg.com/vi/OORUHkgg4IM/maxresdefault.jpg" alt="Channel Logo" class="icon">
+              <div class="video-details">
+                <h2 class="title">Top 10 Easy To Create JavaScript Games For Beginners</h2>
+                <p class="channel name">Bindawdi TV</p>
+                <p class="views">27k Views ~ 4 months ago</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="video-card">
+            <div class="thumbnail-container">
+              <img src="https://i.ytimg.com/vi/OORUHkgg4IM/maxresdefault.jpg" alt="thumbnail" class="thumbnail">
+              <p class="duration">10:03</p>
+            </div>
+            <div class="video-info">
+              <img src="https://i.ytimg.com/vi/OORUHkgg4IM/maxresdefault.jpg" alt="Channel Logo" class="icon">
+              <div class="video-details">
+                <h2 class="title">Top 10 Easy To Create JavaScript Games For Beginners</h2>
+                <p class="channel name">Bindawdi TV</p>
+                <p class="views">27k Views ~ 4 months ago</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="video-card">
+            <div class="thumbnail-container">
+              <img src="https://i.ytimg.com/vi/OORUHkgg4IM/maxresdefault.jpg" alt="thumbnail" class="thumbnail">
+              <p class="duration">10:03</p>
+            </div>
+            <div class="video-info">
+              <img src="https://i.ytimg.com/vi/OORUHkgg4IM/maxresdefault.jpg" alt="Channel Logo" class="icon">
+              <div class="video-details">
+                <h2 class="title">Top 10 Easy To Create JavaScript Games For Beginners</h2>
+                <p class="channel name">Bindawdi TV</p>
+                <p class="views">27k Views ~ 4 months ago</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

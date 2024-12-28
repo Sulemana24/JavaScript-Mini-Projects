@@ -1,0 +1,27 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+.post-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+#post-title {
+  font-size: 28px;
+  color: #333;
+}
+.meta {
+  font-size: 14px;
+  color: gray;
+  margin-bottom: 20px;
+}
+.post-details {
+  font-size: 18px;
+  line-height: 1.6;
+}
